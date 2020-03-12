@@ -1,30 +1,50 @@
 ﻿module Synthesis
+(*
+let abelar input = (3097 > input > 12) && (input%12 = 0) 
+    failwith "Not implemented"
+*)
 
-let abelar _ =
+let area b h =
+    match b < 0.0 || h < 0.0 with
+    |true -> failwith "Negative breadth or height given"
+    |false -> (b*h)/2.0
+    |_ ->
     failwith "Not implemented"
 
-let area _ _ =
+let zollo input =
+    match input < 0 with
+    |true -> -1*input
+    |false -> input*2
+    |_ ->
     failwith "Not implemented"
 
-let zollo _ =
+let min a b =
+    match a < b with
+    |true -> a
+    |false -> b
+    |_ ->
     failwith "Not implemented"
 
-let min _ _ =
+let max a b =
+    match a < b with
+    |true -> b
+    |false -> a
+    |_ ->
+    failwith "Not implemented"
+(*
+let ofTime hrs mins sec = (hrs*3600) + (mins*60) + sec
+    failwith "Not implemented"
+*)
+let toTime sec = sec/3600,sec
     failwith "Not implemented"
 
-let max _ _ =
+let digits number = 
     failwith "Not implemented"
 
-let ofTime _ _ _ =
-    failwith "Not implemented"
-
-let toTime _ =
-    failwith "Not implemented"
-
-let digits _ =
-    failwith "Not implemented"
-
-let minmax _ =
+let minmax a b c d =
+    match a<b with
+    |true -> 
+    |false ->
     failwith "Not implemented"
 
 let isLeap _ =
